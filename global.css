@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+.main-container,
+.main-container__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container__content {
+    font-family: var(--main-font);
+    align-items: center;
+}
