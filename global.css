@@ -3,13 +3,38 @@ body {
     background-color: var(--background-color);
 }
 
+.main-container {
+    width: 100%;
+}
+
 .main-container,
 .main-container__content {
     display: flex;
+}
+
+.main-container,
+.main-container__content,
+.main-container__content-heading {
     flex-direction: column;
+}
+
+.main-container__hero {
+    background: url('images/hero-mobile.jpg') no-repeat;
+    width: 100%;
+    min-height: 330px;
+    background-size: cover;
 }
 
 .main-container__content {
     font-family: var(--main-font);
     align-items: center;
+    padding: 50px 20px;
+}
+
+.main-container__content-heading {
+    text-transform: uppercase;
+    font-size: min(max(45px, 4vw), 55px);
+    margin: auto;
+    letter-spacing: .5rem;
+    font-weight: 300;
 }
