@@ -33,13 +33,17 @@ body {
 .main-container__content {
     font-family: var(--main-font);
     color: var(--main-text-color);
-    align-items: center;
     padding: 50px 20px; 
 }
 
+.main-container__content,
 .main-container__content--additional-container {
-    width: 60%;
+    justify-content: center;
     align-items: center;
+}
+
+.main-container__content--additional-container {
+    width: 90%;
 }
 
 .main-container__content-heading {
@@ -53,6 +57,8 @@ body {
 .main-container__content-text {
     font-size: min(max(15px, 4vw), 18px);
     word-spacing: 6px;
+    line-height: 130%;
+    margin: auto;
 }
 
 span {
@@ -76,10 +82,10 @@ span {
 
 .main-container__content-btn {
     position: relative;
-    top: 30px;
+    top: 29px;
     right: -120px;
     width: 70px; 
-    height: 49px;
+    height: 51px;
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     border: none;
 }
